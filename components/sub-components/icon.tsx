@@ -1,14 +1,13 @@
 import React from 'react';
 
 const IconLogo = () => (
-  <svg id="logo" xmlns="http://www.w3.org/2000/svg" role="img" viewBox="0 0 84 96" height="50" 
-  width="50">
+  <svg id="logo" xmlns="http://www.w3.org/2000/svg" role="img" viewBox="0 0 84 96" height="50" width="50">
     <title>Logo</title>
     <g transform="translate(-8.000000, -2.000000)">
       <g transform="translate(11.000000, 5.000000)">
         <polygon
           id="Shape"
-          stroke="currentColor"
+          stroke="#64ffda"
           strokeWidth="5"
           strokeLinecap="round"
           strokeLinejoin="round"
@@ -16,7 +15,7 @@ const IconLogo = () => (
         />
       </g>
     </g>
-    <text x="26" y="65" fill="currentColor" fontSize="50px" fontFamily="Consolas">
+    <text x="26" y="65" fill="#64ffda" fontSize="50px" fontFamily="Consolas">
       P
     </text>
   </svg>
