@@ -35,7 +35,7 @@ const Banner = () => {
                     </span>
                 </a>
             </motion.p>
-            <button className='w-52 h-14 text-sm font-titleFont border border-textColor rounded-md text-textColor tracking-wide hover:bg-bodyColor duration-300'>Get In Touch</button>
+            <button className='w-52 h-14 text-sm font-titleFont border border-textColor rounded-md text-textColor tracking-wide hover:bg-hoverColor duration-300'>Get In Touch</button>
         </section>
     )
 }
