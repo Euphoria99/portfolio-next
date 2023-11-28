@@ -24,7 +24,7 @@ const Banner = () => {
             </motion.h1>
             <motion.p className='text-base md:max-x-[650px] text-textDark font-medium'>
                 { " "}
-                I'm a software developer based in Mangalore, Karnataka-India, specializing in <br />
+                I&apos;m a software developer based in Mangalore, Karnataka-India, specializing in <br />
                 building  websites and mobile applications and everything in between.
                 { " "} 
                 <br />
