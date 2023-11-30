@@ -1,12 +1,12 @@
 'use client'
 import Image from 'next/image'
-
 //
-import Navbar from '@/components/main/Navbar';
-import IconPannel from '@/components/main/IconPannel';
-import EmailPannel from '@/components/main/EmailPannel';
+import Navbar from '@/components/sub-components/Navbar';
+import IconPannel from '@/components/sub-components/IconPannel';
+import EmailPannel from '@/components/sub-components/EmailPannel';
 import { motion } from 'framer-motion';
-import Banner from '@/components/main/Banner';
+import Banner from '@/components/sub-components/Banner';
+import About from './About';
 
 
 export default function Home() {
@@ -21,8 +21,16 @@ export default function Home() {
             className='hidden xl:inline-flex w-32 h-full fixed left-0 bottom-0'>
             <IconPannel />
           </motion.div>
-          <div className='h-[88vh] mx-auto p-4'>
+          <div className='h-[88vh] w-full mx-auto p-4'>
+            {/*  */}
             <Banner />
+            {/* About */}
+            <About />
+            {/*Experience  */}
+            {/*  Projects*/}
+            {/*  Archive*/}
+            {/*  Contact*/}
+            {/*  Footer*/}
           </div>
           <motion.div
             initial={{ opacity: 0 }}

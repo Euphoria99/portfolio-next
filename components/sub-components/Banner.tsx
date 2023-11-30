@@ -22,11 +22,15 @@ const Banner = () => {
             >
                 Pavan Bhat. <br /><span className='text text-textDark mt-2 lgl:mt-4'>I build Web Apps and run them on Cloud</span>
             </motion.h1>
-            <motion.p className='text-base md:max-x-[650px] text-textDark font-medium'>
-                { " "}
+            <motion.p
+                initial={{ y: 10, opacity: 0 }}
+                animate={{ y: 0, opacity: 1 }}
+                transition={{ duration: 0.5, delay: 0.8 }}
+                className='text-base md:max-x-[650px] text-textDark font-medium'>
+                {" "}
                 I&apos;m a software developer based in Mangalore, Karnataka-India, specializing in <br />
                 building  websites and mobile applications and everything in between.
-                { " "} 
+                {" "}
                 <br />
                 <a href="mailto:example@gmail.com">
                     <span className='text-textColor inline-flex relative cursor-pointer h-7 overflow-x-hidden group'>
@@ -35,7 +39,14 @@ const Banner = () => {
                     </span>
                 </a>
             </motion.p>
-            <button className='w-52 h-14 text-sm font-titleFont border border-textColor rounded-md text-textColor tracking-wide hover:bg-hoverColor duration-300'>Get In Touch</button>
+            <motion.button
+                initial={{ y: 10, opacity: 0 }}
+                animate={{ y: 0, opacity: 1 }}
+                transition={{ duration: 0.5, delay: 0.9 }}
+                className='w-52 h-14 text-sm font-titleFont border border-textColor rounded-md text-textColor tracking-wide hover:bg-hoverColor duration-300'
+            >
+                Get In Touch
+            </motion.button>
         </section>
     )
 }

@@ -1,6 +1,6 @@
 'use client';
 import React from "react";
-import IconLogo from "../sub-components/icon";
+import IconLogo from "./icon";
 import Link from "next/link";
 import { motion } from 'framer-motion'
 
