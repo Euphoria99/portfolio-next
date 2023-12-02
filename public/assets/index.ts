@@ -1,4 +1,4 @@
-import gojo from "./gojo.png"
-import profileImage from "./profile-pic.jpg"
+import zhang from "./zhang.jpg"
 
-export { gojo,profileImage };
+
+export { zhang };
