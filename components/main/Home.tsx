@@ -7,6 +7,7 @@ import EmailPannel from '@/components/sub-components/EmailPannel';
 import { motion } from 'framer-motion';
 import Banner from '@/components/sub-components/Banner';
 import About from './About';
+import Experience from './Experience';
 
 
 export default function Home() {
@@ -27,6 +28,7 @@ export default function Home() {
             {/* About */}
             <About />
             {/*Experience  */}
+            <Experience />
             {/*  Projects*/}
             {/*  Archive*/}
             {/*  Contact*/}

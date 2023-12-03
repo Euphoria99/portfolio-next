@@ -1,3 +1,4 @@
-import gojo from "./gojo.png"
+import zhang from "./zhang.jpg"
 
-export { gojo};
+
+export { zhang };
