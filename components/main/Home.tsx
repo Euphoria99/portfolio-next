@@ -8,6 +8,7 @@ import { motion } from 'framer-motion';
 import Banner from '@/components/sub-components/Banner';
 import About from './About';
 import Experience from './Experience';
+import Projects from './Projects';
 
 
 export default function Home() {
@@ -30,6 +31,7 @@ export default function Home() {
             {/*Experience  */}
             <Experience />
             {/*  Projects*/}
+            <Projects />
             {/*  Archive*/}
             {/*  Contact*/}
             {/*  Footer*/}
