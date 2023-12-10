@@ -50,8 +50,8 @@ const Projects = () => {
                                 <li>Tailwind.css</li>
                             </ul>
                             <div className='text-2xl flex gap-4'>
-                                <a className='hover:text-textColor duration-300 hover:-translate-y-2 transition-all' href="https://github.com/Euphoria99"><VscGithubInverted /></a>
-                                <a className='hover:text-textColor duration-300 hover:-translate-y-2 transition-all' href="https://github.com/Euphoria99"><FaExternalLinkAlt /></a>
+                                <a className='hover:text-textColor duration-300 hover:-translate-y-2 transition-all' href="https://github.com/Euphoria99" target="_blank"><VscGithubInverted /></a>
+                                <a className='hover:text-textColor duration-300 hover:-translate-y-2 transition-all' href="https://github.com/Euphoria99" target="_blank"><FaExternalLinkAlt /></a>
                             </div>
                         </div>
                     </div>
@@ -92,8 +92,8 @@ const Projects = () => {
                                 <li>Tailwind.css</li>
                             </ul>
                             <div className='text-2xl flex gap-4'>
-                                <a className='hover:text-textColor duration-300 hover:-translate-y-2 transition-all' href="https://github.com/Euphoria99"><VscGithubInverted /></a>
-                                <a className='hover:text-textColor duration-300 hover:-translate-y-2 transition-all' href="https://github.com/Euphoria99"><FaExternalLinkAlt /></a>
+                                <a className='hover:text-textColor duration-300 hover:-translate-y-2 transition-all' href="https://github.com/Euphoria99" target="_blank"><VscGithubInverted /></a>
+                                <a className='hover:text-textColor duration-300 hover:-translate-y-2 transition-all' href="https://github.com/Euphoria99" target="_blank"><FaExternalLinkAlt /></a>
                             </div>
                         </div>
                     </div>
@@ -134,8 +134,8 @@ const Projects = () => {
                                 <li>Tailwind.css</li>
                             </ul>
                             <div className='text-2xl flex gap-4'>
-                                <a className='hover:text-textColor duration-300 hover:-translate-y-2 transition-all' href="https://github.com/Euphoria99"><VscGithubInverted /></a>
-                                <a className='hover:text-textColor duration-300 hover:-translate-y-2 transition-all' href="https://github.com/Euphoria99"><FaExternalLinkAlt /></a>
+                                <a className='hover:text-textColor duration-300 hover:-translate-y-2 transition-all' href="https://github.com/Euphoria99" target="_blank"><VscGithubInverted /></a>
+                                <a className='hover:text-textColor duration-300 hover:-translate-y-2 transition-all' href="https://github.com/Euphoria99" target="_blank"><FaExternalLinkAlt /></a>
                             </div>
                         </div>
                     </div>
