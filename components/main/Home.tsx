@@ -9,6 +9,7 @@ import Banner from '@/components/sub-components/Banner';
 import About from './About';
 import Experience from './Experience';
 import Projects from './Projects';
+import Archives from './Archives';
 
 
 export default function Home() {
@@ -33,6 +34,7 @@ export default function Home() {
             {/*  Projects*/}
             <Projects />
             {/*  Archive*/}
+            <Archives />
             {/*  Contact*/}
             {/*  Footer*/}
           </div>
