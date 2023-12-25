@@ -1,11 +1,29 @@
 'use client';
-import React from "react";
+import React, { useRef } from "react";
 import IconLogo from "./icon";
 import Link from "next/link";
 import { motion } from 'framer-motion'
 
 
 const Navbar = () => {
+
+  const ref =  useRef<String | any>("")
+  const handleScroll = (e: React.MouseEvent<HTMLAnchorElement, MouseEvent>) => {
+    e.preventDefault();
+    const href = e.currentTarget.href;
+    const targetId = href.replace(/.*\#/, "");
+    const elem = document.getElementById(targetId);
+    elem?.scrollIntoView(
+      {behavior: "smooth",}
+    )
+    //update the class name of the clicked link 
+
+    const links = document.querySelectorAll(".nav-link");
+    links.forEach((link) => {
+      link.classList.remove("active")
+    })
+    e.currentTarget.classList.add("active");
+  }
   return (
     <div className="w-full shadow-navbarShadow h-20 lg:h-[12vh] sticky top-0 z-50 bg-bodyColor px-4">
       <div className="max-w-container h-full mx-auto py-1 font-titleFont flex items-center justify-between">
@@ -16,12 +34,14 @@ const Navbar = () => {
           <ul className="flex text-[15px] gap-7">
             <Link
               href="#home"
+              onClick={handleScroll}
               className="flex items-center gap-1 font-medium  text-textDark hover:text-textColor cursor-pointer duration-300 nav-link">
               <motion.li initial={{ y: -10, opacity: 0 }} animate={{ y: 0, opacity: 1 }} transition={{ duration: 0.1 }}>Home</motion.li>
             </Link>
             {/*-About-*/}
             <Link
               href="#about"
+              onClick={handleScroll}
               className="flex items-center gap-1 font-medium  text-textDark hover:text-textColor cursor-pointer duration-300 nav-link">
               <motion.li initial={{ y: -10, opacity: 0 }} animate={{ y: 0, opacity: 1 }} transition={{ duration: 0.1, delay: 0.1 }}>
                 <span className="text-textColor">01.</span> About
@@ -30,6 +50,7 @@ const Navbar = () => {
             {/*-Experience-*/}
             <Link
               href="#experience"
+              onClick={handleScroll}
               className="flex items-center gap-1 font-medium  text-textDark hover:text-textColor cursor-pointer duration-300 nav-link">
               <motion.li initial={{ y: -10, opacity: 0 }} animate={{ y: 0, opacity: 1 }} transition={{ duration: 0.1, delay: 0.1 }}>
               <span className="text-textColor">02.</span>Experience
@@ -38,6 +59,7 @@ const Navbar = () => {
             {/*-Project-*/}
             <Link
               href="#projects"
+              onClick={handleScroll}
               className="flex items-center gap-1 font-medium  text-textDark hover:text-textColor cursor-pointer duration-300 nav-link">
               <motion.li initial={{ y: -10, opacity: 0 }} animate={{ y: 0, opacity: 1 }} transition={{ duration: 0.1, delay: 0.1 }}>
               <span className="text-textColor">03.</span> Projects
@@ -46,6 +68,7 @@ const Navbar = () => {
             {/*-Contact-*/}
             <Link
               href="#contact"
+              onClick={handleScroll}
               className="flex items-center gap-1 font-medium  text-textDark hover:text-textColor cursor-pointer duration-300 nav-link">
               <motion.li initial={{ y: -10, opacity: 0 }} animate={{ y: 0, opacity: 1 }} transition={{ duration: 0.1, delay: 0.1 }}>
               <span className="text-textColor">04.</span> Contact
