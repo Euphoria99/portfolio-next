@@ -10,6 +10,8 @@ import About from './About';
 import Experience from './Experience';
 import Projects from './Projects';
 import Archives from './Archives';
+import Contact from './Contact';
+import Footer from './Footer';
 
 
 export default function Home() {
@@ -36,7 +38,9 @@ export default function Home() {
             {/*  Archive*/}
             <Archives />
             {/*  Contact*/}
+            <Contact />
             {/*  Footer*/}
+            <Footer />
           </div>
           <motion.div
             initial={{ opacity: 0 }}
