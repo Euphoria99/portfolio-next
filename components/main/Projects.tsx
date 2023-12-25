@@ -9,7 +9,7 @@ import { FaExternalLinkAlt } from "react-icons/fa";
 const Projects = () => {
     return (
         <section
-            id="project"
+            id="projects"
             className='max-w-container mx-auto lgl:px-20 py-24'
         >
             <SectionTitle title="Projects" titleNo="03" />
