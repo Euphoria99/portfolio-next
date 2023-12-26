@@ -3,6 +3,7 @@ import SectionTitle from "../sub-components/SectionTitle";
 import { HiOutlineRocketLaunch } from "react-icons/hi2";
 import { zhang } from "@/public/assets";
 import Image from "next/image";
+import { skillList } from "../../datasource"
 
 const About = () => {
   return (
@@ -21,54 +22,16 @@ const About = () => {
           </p>
           <p>Here are a few technologies I've been working with recently:</p>
           <ul className="max-w-[450px] text-sm font-titleFont grid grid-cols-2 gap-2">
-            <li className="flex items-center gap-2">
-              <span className="text-textColor">
-                <HiOutlineRocketLaunch />
-              </span>
-              JavaScript
-            </li>
-            <li className="flex items-center gap-2">
-              <span className="text-textColor">
-                <HiOutlineRocketLaunch />
-              </span>
-              Node.js
-            </li>
-            <li className="flex items-center gap-2">
-              <span className="text-textColor">
-                <HiOutlineRocketLaunch />
-              </span>
-              MongoDB
-            </li>
-            <li className="flex items-center gap-2">
-              <span className="text-textColor">
-                <HiOutlineRocketLaunch />
-              </span>
-              Angular
-            </li>
-            <li className="flex items-center gap-2">
-              <span className="text-textColor">
-                <HiOutlineRocketLaunch />
-              </span>
-              Express.js
-            </li>
-            <li className="flex items-center gap-2">
-              <span className="text-textColor">
-                <HiOutlineRocketLaunch />
-              </span>
-              AWS
-            </li>
-            <li className="flex items-center gap-2">
-              <span className="text-textColor">
-                <HiOutlineRocketLaunch />
-              </span>
-              Docker
-            </li>
-            <li className="flex items-center gap-2">
-              <span className="text-textColor">
-                <HiOutlineRocketLaunch />
-              </span>
-              Kubernetes
-            </li>
+
+          {skillList.map((item, index) => (
+          // <ArchiveCard key={index} {...item} />
+          <li key={index} className="flex items-center gap-2">
+          <span className="text-textColor">
+            <HiOutlineRocketLaunch />
+          </span>
+             {item}
+        </li>
+        ))}
           </ul>
         </div>
         <div className="w-full lgl:w-1/3 h-80 relative group">
