@@ -3,7 +3,7 @@ import SectionTitle from "../sub-components/SectionTitle";
 import { HiOutlineRocketLaunch } from "react-icons/hi2";
 import { zhang } from "@/public/assets";
 import Image from "next/image";
-import { skillList } from "../../datasource"
+import { bioData } from "../../datasource"
 
 const About = () => {
   return (
@@ -15,15 +15,12 @@ const About = () => {
       <div className="flex flex-col lgl:flex-row gap-16">
         <div className="w-full lgl:w-2/3 text-base text-textDark font-medium flex flex-col gap-4">
           <p>
-            Hello! I'm Pavan, a Software Developer based in Mangalore,India. I
-            enjoy creating beautiful and reliable applications for internet and
-            phones. My goal is to always build scalable products and performant
-            experiences.
+            {bioData.about}
           </p>
           <p>Here are a few technologies I've been working with recently:</p>
           <ul className="max-w-[450px] text-sm font-titleFont grid grid-cols-2 gap-2">
 
-          {skillList.map((item, index) => (
+          {bioData.skillList?.map((item, index) => (
           // <ArchiveCard key={index} {...item} />
           <li key={index} className="flex items-center gap-2">
           <span className="text-textColor">

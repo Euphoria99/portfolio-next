@@ -4,7 +4,7 @@ import IconLogo from "./icon";
 import Link from "next/link";
 import { motion } from "framer-motion";
 import { MdOutlineClose } from "react-icons/md";
-import { additionalData , allLinks} from "../../datasource";
+import { bioData , allLinks} from "../../datasource";
 
 const Navbar = () => {
   const ref = useRef<String | any>("");
@@ -121,7 +121,7 @@ const Navbar = () => {
             </Link>
           </ul>
           {/*-Resume button-*/}
-          {additionalData.enableResume && (
+          {bioData.enableResume && (
             <a href={allLinks[0].value} target="_blank">
               <motion.button
                 initial={{ opacity: 0 }}
@@ -231,8 +231,8 @@ const Navbar = () => {
                     </motion.li>
                   </Link>
                 </ul>
-                {additionalData.enableResume && (
-                  <a href="/assets/resume.pdf" target="_blank">
+                {bioData.enableResume && (
+                  <a href={allLinks[0].value} target="_blank">
                     <motion.button
                       initial={{ opacity: 0 }}
                       animate={{ opacity: 1 }}
