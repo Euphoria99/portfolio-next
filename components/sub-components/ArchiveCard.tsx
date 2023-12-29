@@ -1,43 +1,40 @@
 import React from 'react'
-import ArchiveCard from '../sub-components/ArchiveCard'
+import { FaRegFolder } from "react-icons/fa";
+import { RxOpenInNewWindow } from "react-icons/rx";
 
-const Archives = () => {
 
-  const data = [
-    {
-      "title": "Mausam",
-      "desc": "Lorem ipsum dolor sit amet consectetur adipisicing elit. Incidunt, pariatur? Voluptas perferendis aspernatur recusandae unde ea eum iusto nemo. Nam rem id minus. Accusantium fuga tempore iure. Porro, nemo adipisci.",
-      "listItem": ["Flutter", "BLoC", "Firebase"],
-      "link": "https://github.com"
-    },
-    {
-      "title": "Qrpix",
-      "desc": "Lorem ipsum dolor sit amet consectetur adipisicing elit. Incidunt, pariatur? Voluptas perferendis aspernatur recusandae unde ea eum iusto nemo. Nam rem id minus. Accusantium fuga tempore iure. Porro, nemo adipisci.",
-      "listItem": ["HTML", "CSS", "JavaScript"],
-      "link": "https://github.com"
-    },
-    {
-      "title": "Paytm",
-      "desc": "Lorem ipsum dolor sit amet consectetur adipisicing elit. Incidunt, pariatur? Voluptas perferendis aspernatur recusandae unde ea eum iusto nemo. Nam rem id minus. Accusantium fuga tempore iure. Porro, nemo adipisci.",
-      "listItem": ["HTML", "CSS", "JavaScript"],
-      "link": "https://github.com"
-    },
-  ];
-
-  return (
-    <div className='max-w-contentContainer mx-auto px-4 py-24'>
-      <div className='w-full flex flex-col items-center'>
-        <h2 className='text-3xl font-titleFont font-semibold'>Other Noteworthy Projects</h2>
-        <p className='text-sm font-titleFont text-textColor'>View the archives</p>
-      </div>
-      <div className='grid grid-cols-1 md:grid-cols-1 md:grid-cols xl:grid-cols-3 gap-6 mt-10 lgl:px-10'>
-        {data.map((item, index) => (
-          <ArchiveCard key={index} {...item} />
-        ))}
-      </div>
-    </div>
-  )
-
+interface Props {
+  title: string,
+  desc: string,
+  listItem: string[],
+  link: string
 }
 
-export default Archives
+const ArchiveCard = ({ title, desc, listItem, link }: Props) => {
+  return (
+
+    <a href={link} target='_blank'>
+      <div>
+        <div className='w-full h-80 rounded-lg bg-[#112240] p-7 flex flex-col justify-center gap-6 hover:-translate-y-2 transition-transform duration-300 group'>
+          <div className='flex justify-between items-center'>
+            <FaRegFolder className='text-4xl hover:text-textColor' />
+            <RxOpenInNewWindow className='text-4xl hover:text-textColor' />
+          </div>
+          <div>
+            <h2 className='text-xl font-titleFont font-semibold tracking-wide group-hover:text-textColor'>{title}</h2>
+            <p className='text-sm mt-3'>{desc}</p>
+          </div>
+          <ul className='text-xs mdl:text-sm text-textDark flex items-center gap-2 justify-between flex-wrap'>
+            {
+              listItem.map((item, i) => (
+                <li key={i}>{item}</li>
+              ))
+            }
+          </ul>
+        </div>
+      </div>
+    </a>
+  )
+}
+
+export default ArchiveCard
