@@ -11,7 +11,7 @@ const bioData = {
 
 }
 
-const projectList = [
+const featuredProjectList = [
   {
       projectName: " Echowave: A Chat App",
       projectDesc: `<p className='bg-[#112240] text-sm md:text-base p-2 xl:-ml-16 md:p-2 rounded-md'>
@@ -63,6 +63,45 @@ const experienceList = [
       "companyLink": "www.google.com"
     }
   ];
+
+ const  otherProjects = [
+    {
+      "title": "Mausam",
+      "desc": "Lorem ipsum dolor sit amet consectetur adipisicing elit. Incidunt, pariatur? Voluptas perferendis aspernatur recusandae unde ea eum iusto nemo. Nam rem id minus. Accusantium fuga tempore iure. Porro, nemo adipisci.",
+      "listItem": ["Flutter", "BLoC", "Firebase"],
+      "link": "https://github.com"
+    },
+    {
+      "title": "Qrpix",
+      "desc": "Lorem ipsum dolor sit amet consectetur adipisicing elit. Incidunt, pariatur? Voluptas perferendis aspernatur recusandae unde ea eum iusto nemo. Nam rem id minus. Accusantium fuga tempore iure. Porro, nemo adipisci.",
+      "listItem": ["HTML", "CSS", "JavaScript"],
+      "link": "https://github.com"
+    },
+    {
+      "title": "Paytm",
+      "desc": "Lorem ipsum dolor sit amet consectetur adipisicing elit. Incidunt, pariatur? Voluptas perferendis aspernatur recusandae unde ea eum iusto nemo. Nam rem id minus. Accusantium fuga tempore iure. Porro, nemo adipisci.",
+      "listItem": ["HTML", "CSS", "JavaScript"],
+      "link": "https://github.com"
+    },
+    {
+      "title": "CGI-1",
+      "desc": "Lorem ipsum dolor sit amet consectetur adipisicing elit. Incidunt, pariatur? Voluptas perferendis aspernatur recusandae unde ea eum iusto nemo. Nam rem id minus. Accusantium fuga tempore iure. Porro, nemo adipisci.",
+      "listItem": ["Flutter", "BLoC", "Firebase"],
+      "link": "https://github.com"
+    },
+    {
+      "title": "CGI-2",
+      "desc": "Lorem ipsum dolor sit amet consectetur adipisicing elit. Incidunt, pariatur? Voluptas perferendis aspernatur recusandae unde ea eum iusto nemo. Nam rem id minus. Accusantium fuga tempore iure. Porro, nemo adipisci.",
+      "listItem": ["HTML", "CSS", "JavaScript"],
+      "link": "https://github.com"
+    },
+    {
+      "title": "CGI-3",
+      "desc": "Lorem ipsum dolor sit amet consectetur adipisicing elit. Incidunt, pariatur? Voluptas perferendis aspernatur recusandae unde ea eum iusto nemo. Nam rem id minus. Accusantium fuga tempore iure. Porro, nemo adipisci.",
+      "listItem": ["HTML", "CSS", "JavaScript"],
+      "link": "https://github.com"
+    },
+  ];
   
-export { skillList, allLinks,  experienceList , bioData , projectList};
+export { skillList, allLinks,  experienceList , bioData , featuredProjectList, otherProjects};
   

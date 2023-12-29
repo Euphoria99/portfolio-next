@@ -5,7 +5,7 @@ import { chatApp } from '@/public/assets';
 
 import { VscGithubInverted } from "react-icons/vsc";
 import { FaExternalLinkAlt } from "react-icons/fa";
-import { projectList } from "../../datasource"
+import { featuredProjectList } from "../../datasource"
 
 const Projects = () => {
     return (
@@ -15,7 +15,7 @@ const Projects = () => {
         >
             <SectionTitle title="Projects" titleNo="03" />
             <div className='w-full flex flex-col items-center justify-between gap-28 mt-10'>
-                {projectList.map((project, index) => (
+                {featuredProjectList.map((project, index) => (
                     <div
                         key={index}
                         className='w-full flex flex-col items-center justify-center gap-28 mt-10'
