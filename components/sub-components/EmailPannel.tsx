@@ -7,8 +7,10 @@ const EmailPannel = () => {
             <p className='text-sm rotate-90 w-72 tracking-wide text-textColor'>363pavanbhat@gmail.com</p>
         </a>
               {/* white line*/}
-      <span className="w-[2px] h-32 bg-textDark inline-flex">
-      </span>
+      <div className="w-[2px] ">
+      </div>
+      {/* <div className="w-[2px] h-32 bg-textDark">
+      </div> */}
      </div>
   )
 }

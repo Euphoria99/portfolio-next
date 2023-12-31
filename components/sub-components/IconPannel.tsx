@@ -33,8 +33,8 @@ const IconPannel = () => {
         </a>
       </div>
       {/* white line*/}
-      <div className="w-[2px] h-32 bg-textDark">
-      </div>
+      {/* <div className="w-[2px] h-32 bg-textDark">
+      </div> */}
     </div>
   )
 }
