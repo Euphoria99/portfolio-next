@@ -17,15 +17,17 @@ import { useCallback, useEffect, useRef, useState } from 'react';
 
 export default function Home() {
 
+  const [isAtTop, setIsAtTop] = useState(true)
   const handleScroll = (e: React.UIEvent<HTMLElement>) => {
+    setIsAtTop(false);
     if(e.currentTarget.scrollTop === 0) {
-       alert("on top")
+      setIsAtTop(true)
     }
 } 
 
   return (
     <div onScroll={handleScroll} className="w-full h-screen font-bodyFont bg-bodyColor text-textLight overflow-x-hidden overflow-y-scroll scrollbar-track-textDark/20 scrollbar-thumb-textDark/60 scrollbar-thin scrollbar-thumb-rounded-full">
-      <Navbar />
+      <Navbar isAtTop={isAtTop} />
       <div className="w-full h-[88vh] xl:flex items-center gap-20 justify-between">
         <motion.div
           initial={{ opacity: 0 }}
