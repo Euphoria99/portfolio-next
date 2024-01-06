@@ -1,5 +1,5 @@
-'use-client';
-import React, { useState } from 'react';
+'use client'
+import React, { useState } from 'react'
 import ArchiveCard from '../sub-components/ArchiveCard';
 import { motion } from 'framer-motion';
 import { otherProjects} from "../../datasource";

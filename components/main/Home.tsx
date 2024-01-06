@@ -10,7 +10,7 @@ import About from './About';
 import Experience from './Experience';
 import Projects from './Projects';
 import Archives from './Archives';
-import Contact from './Contact';
+import Contact from './Contacts';
 import Footer from './Footer';
 import { useCallback, useEffect, useRef, useState } from 'react';
 import Signature from '../sub-components/Signature';
