@@ -1,3 +1,4 @@
+'use client'
 import React, { useState } from 'react'
 import SectionTitle from '../sub-components/SectionTitle'
 import { experienceList } from "../../datasource"
