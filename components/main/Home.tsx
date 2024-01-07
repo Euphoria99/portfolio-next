@@ -27,8 +27,7 @@ export default function Home() {
     if(e.currentTarget.scrollTop === 0) {
       setIsAtTop(true)
     }
-} 
-
+  } 
   return (
     <div onScroll={handleScroll} className="w-full h-screen font-bodyFont bg-bodyColor text-textLight overflow-x-hidden overflow-y-scroll scrollbar-track-textDark/20 scrollbar-thumb-textDark/60 scrollbar-thin scrollbar-thumb-rounded-full">
       {
