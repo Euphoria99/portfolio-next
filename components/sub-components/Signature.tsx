@@ -34,8 +34,8 @@ const Signature = ({handleAnimationFinish}:any) => {
       
 
     return (
-        <section className="relative h-screen flex flex-col items-center justify-center pt-0">
-            <div className="max-w-contentContainer mx-auto  text-white">
+        <section id="home" className="relative h-screen flex flex-col items-center justify-center pt-0 ">
+            <div className="max-w-contentContainer mx-auto  text-white mdl-[-60px] mdl:mb-[-50px] mdl:pl-2 sm:mb-[-100px]">
                 <div className={styles.logoContainer}>
                     <svg
                         id="logo"
@@ -94,7 +94,7 @@ const Signature = ({handleAnimationFinish}:any) => {
                     </svg>
                 </div>
             </div>
-            <div className="lgl:text-5xl font-titleFont font-semibold lgl:mt-4 md:text-3xl sm:text-3xl mt-4">
+            <div className="lgl:text-5xl font-titleFont font-semibold lgl:mt-4 md:text-3xl sm:text-3xl mt-4 sm:pl-[40px]">
                 {
                     animFinish && (
 

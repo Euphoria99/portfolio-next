@@ -157,7 +157,7 @@ const Navbar = ({ isAtTop }:homeComp) => {
               initial={{ x: 20, opacity: 0 }}
               animate={{ x: 0, opacity: 1 }}
               transition={{ duration: 0.1 }}
-              className="w-[80%] h-full overflow-y-scroll scrollbarHide bg-[#112240] flex flex-col items-center px-4 py-10 relative"
+              className="w-[80%] h-full overflow-y-scroll scrollbarHide bg-cardColor flex flex-col items-center px-4 py-10 relative"
             >
               <MdOutlineClose
                 onClick={() => setShowMenu(false)}

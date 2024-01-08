@@ -11,33 +11,34 @@ const config: Config = {
       maxWidth: {
         container: "1440px",
         contentContainer: "1140px",
-        containerSmall : "1024px",
+        containerSmall: "1024px",
         containerxs: "768px",
       },
-        screens: {
-          xs: "320px",
-          sm : "375px",
-          sml : "500px",
-          md: "667px",
-          mdl: "768px",
-          lg: "960px",
-          lgl : "1024px",
-          xl: "1280px",
-        },
-        fontFamily: {
-          bodyFont:  ['Montserrat', 'sans-serif'],
-          titleFont:  ['Inter', 'sans-serif'],
-        },
-        boxShadow: {
-          navbarShadow: "0 10px 30px -10px rgba(2,12,27,0.7)",
-        },
-        colors: {
-          bodyColor: "#0A192F",
-          textColor: "#64ffda",
-          textLight: "#ccd6f6",
-          textDark: "#8892b0",
-          hoverColor: "rgba(100,255,218,0.1)"
-        }
+      screens: {
+        xs: "320px",
+        sm: "375px",
+        sml: "500px",
+        md: "667px",
+        mdl: "768px",
+        lg: "960px",
+        lgl: "1024px",
+        xl: "1280px",
+      },
+      fontFamily: {
+        bodyFont: ['Montserrat', 'sans-serif'],
+        titleFont: ['Inter', 'sans-serif'],
+      },
+      boxShadow: {
+        navbarShadow: "0 10px 30px -10px rgba(2,12,27,0.7)",
+      },
+      colors: {
+        bodyColor: "#001219",
+        textColor: "#00b4d8",
+        textLight: "#ccd6f6",
+        textDark: "#8892b0",
+        cardColor: "#1d3557",
+        hoverColor: "rgba(100,255,218,0.1)"
+      }
     },
   },
   plugins: [
