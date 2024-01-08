@@ -136,7 +136,7 @@ const Navbar = ({ isAtTop }:homeComp) => {
                 initial={{ opacity: 0 }}
                 animate={{ opacity: 1 }}
                 transition={{ delay: 0.5 }}
-                className="px-4 py-2 rounded-md text-textColor text-[15px] border border-textColor hover:bg-bodyColor duration-300"
+                className="px-4 py-2 rounded-md text-textColor text-[15px] border border-textColor hover:bg-hoverColor duration-300"
               >
                 Resume
               </motion.button>
