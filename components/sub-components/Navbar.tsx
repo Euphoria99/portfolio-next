@@ -48,7 +48,12 @@ const Navbar = ({ isAtTop }:homeComp) => {
             animate={{ opacity: 1 }}
             transition={{ duration: 0.5 }}
           >
+          <Link
+          href="#home"
+          onClick={handleScroll}
+          >
             <IconLogo />
+          </Link>
           </motion.div>
         </Link>
         <div className="hidden mdl:inline-flex items-center gap-7">
