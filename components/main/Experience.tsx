@@ -10,8 +10,8 @@ const Experience = () => {
 
   return (
     <section
-      id="section"
-      className='max-w-containerxs mx-auto py-10 lgl:py-24 px-4'
+      id="experience"
+      className='max-w-container mx-auto py-10 lgl:py-24 px-4'
     >
       <SectionTitle title="Experience" titleNo="02" />
       <div className='w-full mt-10 flex flex-col md:flex-row gap-16'>
@@ -24,7 +24,7 @@ const Experience = () => {
                 selectedCompany === index
                   ? "border-l-textColor text-textColor"
                   : "border-l-hoverColor text-textDark"
-              } border-l-2  bg-transparent hover:bg-[#112240] py-3 text-sm cursor-pointer duration-300 px-8 font-medium`}
+              } border-l-2  bg-transparent hover:bg-cardColor py-3 text-sm cursor-pointer duration-300 px-8 font-medium`}
             >
               {item.company}
             </li>
