@@ -5,46 +5,50 @@ import Vivus from 'vivus';
 import styles from './Signature.module.scss';
 import { bioData } from "../../datasource"
 
-const Signature = ({handleAnimationFinish}:any) => {
+const Signature = ({ handleAnimationFinish }: any) => {
     const logoRef = useRef(null);
     const [animFinish, setAnimFinish] = useState(false)
 
     useEffect(() => {
         const logoEl = logoRef.current;
-      
-        if (logoEl) {
-          const vivusInstance = new Vivus(
-            logoEl,
-            {
-              type: 'oneByOne',
-              duration: 1000,
-              animTimingFunction: Vivus.EASE_OUT,
-              delay: 200,
-            },
-            function (obj) {
-              // Animation finished callback
-              // obj.el.classList.replace(styles.logo, styles.logoFinished);
-              obj.el.classList.add(styles.finished);
-            //   console.log('Animation completed!');
-            setAnimFinish(true);
-            }
-          );
-             // Show the SVG after the Vivus animation is ready
-             vivusInstance.el.style.visibility = 'visible';
 
-             // Handle window resize by updating the Vivus instance
-             const handleResize = () => vivusInstance.reset().play();
-             
-             window.addEventListener('resize', handleResize);
-       
-             // Cleanup: Remove the event listener when the component unmounts
-             return () => {
-               window.removeEventListener('resize', handleResize);
-             };
+        if (logoEl) {
+            const vivusInstance = new Vivus(
+                logoEl,
+                {
+                    type: 'oneByOne',
+                    duration: 500,
+                    animTimingFunction: Vivus.EASE_OUT,
+                    delay: 200,
+                },
+                function (obj) {
+                    // Animation finished callback
+                    // obj.el.classList.replace(styles.logo, styles.logoFinished);
+                    obj.el.classList.add(styles.finished);
+                    //   console.log('Animation completed!');
+                    setAnimFinish(true);
+
+                    if (handleAnimationFinish) {
+                        handleAnimationFinish(true);
+                    }
+                }
+            );
+            // Show the SVG after the Vivus animation is ready
+            vivusInstance.el.style.visibility = 'visible';
+
+            // Handle window resize by updating the Vivus instance
+            const handleResize = () => vivusInstance.reset().play();
+
+            window.addEventListener('resize', handleResize);
+
+            // Cleanup: Remove the event listener when the component unmounts
+            return () => {
+                window.removeEventListener('resize', handleResize);
+            };
 
         }
-      }, []);
-      
+    }, []);
+
 
     return (
         <section id="home" className="relative h-screen flex flex-col items-center justify-center pt-0 ">
@@ -112,13 +116,13 @@ const Signature = ({handleAnimationFinish}:any) => {
                 {
                     animFinish && (
 
-                <motion.h1
-                    initial={{ y: 50, opacity: 0 }}
-                    animate={{ y: 0, opacity: 1 }}
-                    transition={{ duration: 0.5, delay: 0.7 }}
-                >
-                   {bioData.tagLine2}
-                </motion.h1>
+                        <motion.h1
+                            initial={{ y: 50, opacity: 0 }}
+                            animate={{ y: 0, opacity: 1 }}
+                            transition={{ duration: 0.5, delay: 0.7 }}
+                        >
+                            {bioData.tagLine2}
+                        </motion.h1>
                     )
                 }
             </div>
