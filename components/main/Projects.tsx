@@ -11,7 +11,7 @@ const Projects = () => {
     return (
         <section
             id="projects"
-            className='max-w-container mx-auto lgl:px-20 py-24 '
+            className='max-w-container mx-auto py-10 lgl:py-24 px-4'
         >
             <SectionTitle title="Projects" titleNo="03" />
             <div className='w-full flex flex-col items-center justify-between gap-28 mt-10 sm:pl-2 sm:pr-2'>
