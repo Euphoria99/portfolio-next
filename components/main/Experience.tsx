@@ -11,7 +11,7 @@ const Experience = () => {
   return (
     <section
       id="experience"
-      className='max-w-container mx-auto py-10 lgl:py-24 px-4'
+      className='max-w-containerSmall mx-auto py-10 lgl:py-32 flex flex-col gap-8 sm:pl-2 sm:pr-2'
     >
       <SectionTitle title="Experience" titleNo="02" />
       <div className='w-full mt-10 flex flex-col md:flex-row gap-16'>
