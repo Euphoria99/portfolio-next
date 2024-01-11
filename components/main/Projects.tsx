@@ -1,8 +1,6 @@
 import React from 'react'
 import SectionTitle from '../sub-components/SectionTitle'
 import Image from "next/image";
-import { chatApp } from '@/public/assets';
-
 import { VscGithubInverted } from "react-icons/vsc";
 import { FaExternalLinkAlt } from "react-icons/fa";
 import { featuredProjectList } from "../../datasource"
@@ -11,10 +9,10 @@ const Projects = () => {
     return (
         <section
             id="projects"
-            className='max-w-container mx-auto py-10 lgl:py-24 px-4'
+            className='max-w-container mx-auto lgl:px-20 py-24'
         >
             <SectionTitle title="Projects" titleNo="03" />
-            <div className='max-w-containerSmall mx-auto py-10 lgl:py-32 flex flex-col gap-8 sm:pl-2 sm:pr-2'>
+            <div className='w-full flex flex-col items-center justify-center gap-28 mt-10'>
                 {featuredProjectList.map((project, index) => (
                     <div
                         key={index}
@@ -28,8 +26,8 @@ const Projects = () => {
                             >
                                 <div>
                                     <Image
-                                        className="w-full h-full object-contain"
-                                        src={chatApp}
+                                        className="w-full h-full object-cover"
+                                        src={project.projectImage}
                                         alt="chat app"
                                     />
                                 </div>
@@ -49,26 +47,34 @@ const Projects = () => {
                                 />
 
                                 {" "}
-                                <ul className='text-sx md:text-sm font-titleFont tracking-wide flex gap-2 md:gap-5 justify-between text-textDark'>
+                                <ul className='text-xs md:text-sm font-titleFont tracking-wide flex gap-2 md:gap-5 justify-between text-textDark'>
                                     {project.projectTech.map((tech, techIndex) => (
                                         <li key={techIndex}>{tech}</li>
                                     ))}
                                 </ul>
                                 <div className='text-2xl flex gap-4'>
-                                    <a
-                                        className='hover:text-textColor duration-300 hover:-translate-y-2 transition-all'
-                                        href={project.githubLink}
-                                        target="_blank"
-                                    >
-                                        <VscGithubInverted />
-                                    </a>
-                                    <a
-                                        className='hover:text-textColor duration-300 hover:-translate-y-2 transition-all'
-                                        href={project.projectLink}
-                                        target="_blank"
-                                    >
-                                        <FaExternalLinkAlt />
-                                    </a>
+                                    {
+                                        project.githubLink != '' && (
+                                            <a
+                                                className='hover:text-textColor duration-300 hover:-translate-y-2 transition-all'
+                                                href={project.githubLink}
+                                                target="_blank"
+                                            >
+                                                <VscGithubInverted />
+                                            </a>
+                                        )
+                                    }
+                                    {
+                                        project.projectLink != '' && (
+                                            <a
+                                                className='hover:text-textColor duration-300 hover:-translate-y-2 transition-all'
+                                                href={project.projectLink}
+                                                target="_blank"
+                                            >
+                                                <FaExternalLinkAlt />
+                                            </a>
+                                        )
+                                    }
                                 </div>
                             </div>
                         </div>
