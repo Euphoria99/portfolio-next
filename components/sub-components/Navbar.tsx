@@ -131,7 +131,7 @@ const Navbar = ({ isAtTop }:homeComp) => {
           </ul>
           {/*-Resume button-*/}
           {bioData.enableResume && (
-            <a href={allLinks[0].value} target="_blank">
+            <a href={allLinks.resume} target="_blank">
               <motion.button
                 initial={{ opacity: 0 }}
                 animate={{ opacity: 1 }}
@@ -241,7 +241,7 @@ const Navbar = ({ isAtTop }:homeComp) => {
                   </Link>
                 </ul>
                 {bioData.enableResume && (
-                  <a href={allLinks[0].value} target="_blank">
+                  <a href={allLinks.resume} target="_blank">
                     <motion.button
                       initial={{ opacity: 0 }}
                       animate={{ opacity: 1 }}
