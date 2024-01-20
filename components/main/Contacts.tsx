@@ -1,6 +1,7 @@
 import React from 'react'
 import Image from "next/image";
 import { nextLogo } from '@/public/assets';
+import { bioData } from "../../datasource"
 
 const Contact = () => {
     return (
@@ -12,7 +13,7 @@ const Contact = () => {
         <p className='max-w-[600px] text-center text-textDark'>
         Although I'm not currently looking for any new opportunities, my inbox is always open. Whether you have a question or just want to say hi, I'll try my best to get back to you!
         </p>
-        <a href="mailto:example@gmail.com">
+        <a href={`mailto:${bioData.email}`}>
         <button  className='w-28 h-12 text-sm font-titleFont border border-textColor rounded-md text-textColor tracking-wide hover:bg-hoverColor duration-300' >Say Hello</button> 
         </a>
             <div className="mt-12 ml-12"> 

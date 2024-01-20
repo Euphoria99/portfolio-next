@@ -37,7 +37,11 @@ const featuredProjectList = [
 ]
 
 const allLinks = {
-  resume: 'https://www.google.com/'
+  resume: 'https://www.google.com/',
+  github:'https://github.com',
+  linkedIn:'',
+  twitter:'',
+  discord:''
 }
 const experienceList = [
   {
