@@ -32,7 +32,7 @@ const Banner = () => {
                 <p dangerouslySetInnerHTML={{ __html: bioData.summary }} />
                 {" "}
                 <br />
-                <a href="mailto:example@gmail.com">
+                <a href={`mailto:${bioData.email}`}>
                     <span className='text-textColor inline-flex relative cursor-pointer h-7 overflow-x-hidden group'>
                         Learn More
                         <span className='absolute w-full h-[1px] bg-textColor left-0 bottom-1 -translate-x-[110%] group-hover:translate-x-0 transition-transform duration-500'></span>

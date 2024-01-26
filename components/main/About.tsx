@@ -17,7 +17,7 @@ const About = () => {
           <p>
             {bioData.about}
           </p>
-          <p>Here are a few technologies I've been working with recently:</p>
+          <p>Here are a few technologies I&apos;ve been working with recently:</p>
           <ul className="max-w-[450px] text-sm font-titleFont grid grid-cols-2 gap-2">
 
           {bioData.skillList?.map((item, index) => (
