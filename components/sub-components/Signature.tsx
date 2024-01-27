@@ -5,7 +5,7 @@ import { bioData } from "../../datasource"
 
 const Signature = () => {
     return (
-        <section className="relative h-screen flex flex-col items-center justify-center pt-0">
+        <section  id="home" className="relative h-screen flex flex-col items-center justify-center pt-0">
             <motion.div
                 initial={{ y: 50, opacity: 0 }}
                 animate={{ y: 0, opacity: 1 }}
