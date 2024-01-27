@@ -10,7 +10,7 @@ const bioData = {
   summary: `I&apos;m a software developer based in Mangalore, Karnataka-India, specializing in <br /> building  websites and mobile applications and everything in between.`,
   about: "Hello! I'm Pavan, a Software Developer based in Mangalore,India. I enjoy creating beautiful and reliable applications for internet andphones. My goal is to always build scalable products and performance experiences.",
   skillList: ["JavaScript", "Node.js", " MongoDB", "Angular", "Express.js", "AWS", "Docker", " Kubernetes",],
-  enableResume: true,
+  enableResume: false,
 }
 
 const featuredProjectList = [
