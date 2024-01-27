@@ -1,42 +1,46 @@
 import Home from "@/components/main/Home";
+import { zhang } from "@/public/assets";
+import { Metadata } from "next";
 
 
-export const metadata = {
+export const metadata: Metadata = {
+  title: 'Pavan Bhat',
+  description: 'Portfolio by Pavan Bhat',
   generator: 'Next.js',
-  applicationName: 'Pavan Bhats Portfolio',
+  applicationName: 'Pavan Bhat\'s Portfolio',
   referrer: 'origin-when-cross-origin',
   keywords: ['Next.js', 'React', 'JavaScript'],
-  authors: [{ name: 'Pavan' }],
+  authors: [{ name: 'Pavan' , url:'https://www.pavanbhat.dev/'}],
   creator: 'Pavan Bhat',
+  metadataBase: new URL("https://www.pavanbhat.dev/"),
   publisher: 'Pavan Bhat',
-  formatDetection: {
-    email: false,
-    address: false,
-    telephone: false,
-  },
   openGraph: {
     type: 'website',
     title: 'Pavan Bhats Portfolio',
-    description: 'Next.js portfolio by Pavan Bhat',
-    url: '',
+    description: 'Portfolio by Pavan Bhat',
+    url: 'https://www.pavanbhat.dev/',
     siteName: 'Pavan Bhat',
-    images: [],
+    images: [
+      {
+        url: zhang.src,
+        alt: 'Pavan\'s Image',
+      },
+    ],
     locale: 'en_US',
   },
   twitter: {
-    card: 'summary_large-image',
+    card: 'summary_large_image',
     title: 'Pavan Bhat',
-    description: 'Next.js portfolio by Pavan Bhat',
+    description: 'Pavan Bhat\'s Portfolio',
     creator: '@pavanbhat_99',
-    image: [
+    images: [
       {
-        url: '',
-        alt: '',
+        url: zhang.src,
+        alt: 'Pavan\'s Image',
       },
     ],
   },
-}
-
+};
 
 export default function Page() {
 
