@@ -1,5 +1,5 @@
 import Home from "@/components/main/Home";
-import { zhang } from "@/public/assets";
+import { zhang2 } from "@/public/assets";
 import { Metadata } from "next";
 
 
@@ -22,7 +22,7 @@ export const metadata: Metadata = {
     siteName: 'Pavan Bhat',
     images: [
       {
-        url: zhang.src,
+        url: zhang2.src,
         alt: 'Pavan\'s Image',
       },
     ],
@@ -33,9 +33,13 @@ export const metadata: Metadata = {
     title: 'Pavan Bhat',
     description: 'Pavan Bhat\'s Portfolio',
     creator: '@pavanbhat_99',
-    images: zhang.src
+    images: [
+      {
+        url: zhang2.src,
+        alt: 'Pavan\'s Image',
+      },
+    ],
   },
-  // 
 };
 
 export default function Page() {
