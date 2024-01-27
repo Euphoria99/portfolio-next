@@ -33,8 +33,16 @@ export const metadata: Metadata = {
     title: 'Pavan Bhat',
     description: 'Pavan Bhat\'s Portfolio',
     creator: '@pavanbhat_99',
-    images: [zhang2.src],
+    images: [
+      {
+        url:zhang2.src,
+        width: 1200,
+        height: 630,
+        alt: 'Pavan\'s Image',
+      },
+    ],
   },
+  // 
 };
 
 export default function Page() {
