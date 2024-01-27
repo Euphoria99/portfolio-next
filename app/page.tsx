@@ -36,8 +36,8 @@ export const metadata: Metadata = {
     images: [
       {
         url:zhang2.src,
-        width: 1200,
-        height: 630,
+        width: 512,
+        height: 286,
         alt: 'Pavan\'s Image',
       },
     ],
