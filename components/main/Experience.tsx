@@ -13,7 +13,7 @@ const Experience = () => {
       id="experience"
       className='max-w-containerSmall mx-auto py-10 lgl:py-32 flex flex-col gap-8 sm:pl-2 sm:pr-2'
     >
-      <SectionTitle title="Experience" titleNo="02" />
+      <SectionTitle title="Experience" titleNo="" />
       <div className='w-full mt-10 flex flex-col md:flex-row gap-16'>
         <ul className='md:w-32 flex flex-col'>
           {experienceList.map((item, index) => (
