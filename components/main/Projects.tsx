@@ -11,7 +11,7 @@ const Projects = () => {
             id="projects"
             className='max-w-container mx-auto lgl:px-20 py-24'
         >
-            <SectionTitle title="Projects" titleNo="03" />
+            <SectionTitle title="Projects" titleNo="" />
             <div className='w-full flex flex-col items-center justify-center gap-28 mt-10'>
                 {featuredProjectList.map((project, index) => (
                     <div
