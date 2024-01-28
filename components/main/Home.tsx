@@ -40,7 +40,7 @@ export default function Home() {
               initial={{ opacity: 0 }}
               animate={{ opacity: 1 }}
               transition={{ delay: 1.5 }}
-              className='hidden xl:inline-flex w-32 h-full fixed left-0 bottom-0'>
+              className='hidden xl:inline-flex w-32 h-full fixed left-0 bottom-0 z-50'>
               <IconPannel />
             </motion.div>
         {/* use pt-4 if you are not using signature below */}

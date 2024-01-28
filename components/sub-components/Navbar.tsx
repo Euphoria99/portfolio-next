@@ -83,7 +83,7 @@ const Navbar = ({ isAtTop }:homeComp) => {
                 animate={{ y: 0, opacity: 1 }}
                 transition={{ duration: 0.1, delay: 0.1 }}
               >
-                <span className="text-textColor">01.</span> About
+                <span className="text-textColor"></span> About
               </motion.li>
             </Link>
             {/*-Experience-*/}
@@ -97,7 +97,7 @@ const Navbar = ({ isAtTop }:homeComp) => {
                 animate={{ y: 0, opacity: 1 }}
                 transition={{ duration: 0.1, delay: 0.1 }}
               >
-                <span className="text-textColor">02.</span>Experience
+                <span className="text-textColor"></span>Experience
               </motion.li>
             </Link>
             {/*-Project-*/}
@@ -111,7 +111,7 @@ const Navbar = ({ isAtTop }:homeComp) => {
                 animate={{ y: 0, opacity: 1 }}
                 transition={{ duration: 0.1, delay: 0.1 }}
               >
-                <span className="text-textColor">03.</span> Projects
+                <span className="text-textColor"></span> Projects
               </motion.li>
             </Link>
             {/*-Contact-*/}
@@ -125,7 +125,7 @@ const Navbar = ({ isAtTop }:homeComp) => {
                 animate={{ y: 0, opacity: 1 }}
                 transition={{ duration: 0.1, delay: 0.1 }}
               >
-                <span className="text-textColor">04.</span> Contact
+                <span className="text-textColor"></span> Contact
               </motion.li>
             </Link>
           </ul>
@@ -194,7 +194,7 @@ const Navbar = ({ isAtTop }:homeComp) => {
                       animate={{ y: 0, opacity: 1 }}
                       transition={{ duration: 0.2, delay: 0.2, ease: "easeIn" }}
                     >
-                      <span className="text-textColor">01.</span> About
+                      <span className="text-textColor"></span> About
                     </motion.li>
                   </Link>
                   {/*-Experience-*/}
@@ -208,7 +208,7 @@ const Navbar = ({ isAtTop }:homeComp) => {
                       animate={{ y: 0, opacity: 1 }}
                       transition={{ duration: 0.2, delay: 0.3, ease: "easeIn" }}
                     >
-                      <span className="text-textColor">02.</span>Experience
+                      <span className="text-textColor"></span>Experience
                     </motion.li>
                   </Link>
                   {/*-Project-*/}
@@ -222,7 +222,7 @@ const Navbar = ({ isAtTop }:homeComp) => {
                       animate={{ y: 0, opacity: 1 }}
                       transition={{ duration: 0.2, delay: 0.4, ease: "easeIn" }}
                     >
-                      <span className="text-textColor">03.</span> Projects
+                      <span className="text-textColor"></span> Projects
                     </motion.li>
                   </Link>
                   {/*-Contact-*/}
@@ -236,7 +236,7 @@ const Navbar = ({ isAtTop }:homeComp) => {
                       animate={{ y: 0, opacity: 1 }}
                       transition={{ duration: 0.2, delay: 0.4, ease: "easeIn" }}
                     >
-                      <span className="text-textColor">04.</span> Contact
+                      <span className="text-textColor"></span> Contact
                     </motion.li>
                   </Link>
                 </ul>
