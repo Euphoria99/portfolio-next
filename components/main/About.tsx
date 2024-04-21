@@ -14,9 +14,7 @@ const About = () => {
       <SectionTitle title="About Me" titleNo="" />
       <div className="flex flex-col lgl:flex-row gap-16">
         <div className="w-full lgl:w-2/3 text-base text-textDark font-medium flex flex-col gap-4">
-          <p>
-            {bioData.about}
-          </p>
+          <span dangerouslySetInnerHTML={{ __html: bioData.about }} ></span>
           <p>Here are a few technologies I&apos;ve been working with recently:</p>
           <ul className="max-w-[450px] text-sm font-titleFont grid grid-cols-2 gap-2">
 
