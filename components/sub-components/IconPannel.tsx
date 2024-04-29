@@ -29,7 +29,7 @@ const IconPannel = () => {
           </span>
         </a>
         {/* facebook*/}
-        <a href={allLinks.discord} target="_blank">
+        <a href={allLinks.facebook} target="_blank">
           <span className="w-10 h-10 text-xl bg-bodyColor rounded-full inline-flex items-center justify-center hover: text-textColor cursor-pointer hover:-translate-y-2 transition-all duration-300">
           <FaFacebookSquare />
           </span>
