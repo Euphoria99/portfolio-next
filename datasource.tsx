@@ -13,6 +13,16 @@ const bioData = {
   enableResume: false,
 }
 
+const allLinks = {
+  resume: 'https://www.google.com/',
+  github:'https://github.com/Euphoria99/',
+  linkedIn:'https://www.linkedin.com/in/pavan-bhat-7544781aa/',
+  twitter:'https://twitter.com/pavanbhat_99',
+  facebook:'https://www.facebook.com/pavan.bhat.906',
+  email:'pavanbhat4u@gmail.com',
+  discord:''
+}
+
 const experienceList = [
   {
     "company": "Covalensedigital",
@@ -73,50 +83,43 @@ const featuredProjectList = [
   },
 ]
 
-const allLinks = {
-  resume: 'https://www.google.com/',
-  github:'https://github.com/Euphoria99/',
-  linkedIn:'https://www.linkedin.com/in/pavan-bhat-7544781aa/',
-  twitter:'https://twitter.com/pavanbhat_99',
-  discord:''
-}
 
 const otherProjects = [
   {
-    "title": "Mausam",
-    "desc": "Lorem ipsum dolor sit amet consectetur adipisicing elit. Incidunt, pariatur? Voluptas perferendis aspernatur recusandae unde ea eum iusto nemo. Nam rem id minus. Accusantium fuga tempore iure. Porro, nemo adipisci.",
-    "listItem": ["Flutter", "BLoC", "Firebase"],
-    "link": "https://github.com"
+    "title": "REST Backend API",
+    "desc": "A CRUD application built with Express.js, Node.js and MongoDB that operates over REST.",
+    "listItem": ["Node.js",  "Express.js", "MongoDB", "Mongoose"],
+    "link": "https://github.com/Euphoria99/REST_API"
   },
   {
-    "title": "Qrpix",
-    "desc": "Lorem ipsum dolor sit amet consectetur adipisicing elit. Incidunt, pariatur? Voluptas perferendis aspernatur recusandae unde ea eum iusto nemo. Nam rem id minus. Accusantium fuga tempore iure. Porro, nemo adipisci.",
+    "title": "QrPix",
+    "desc": "A web app to generate valid QR codes with readable images.",
     "listItem": ["HTML", "CSS", "JavaScript"],
-    "link": "https://github.com"
+    "link": "https://github.com/Euphoria99/QrPix"
   },
   {
-    "title": "Paytm",
-    "desc": "Lorem ipsum dolor sit amet consectetur adipisicing elit. Incidunt, pariatur? Voluptas perferendis aspernatur recusandae unde ea eum iusto nemo. Nam rem id minus. Accusantium fuga tempore iure. Porro, nemo adipisci.",
+    "title": "Angular Universal",
+    "desc": "An Angular app leveraging SSR to provide better performance and SEO optimization.",
+    "listItem": ["Angular", "TypeScript", "Node.js"],
+    "link": "https://github.com/Euphoria99/Angular_Universal"
+  },
+  {
+    "title": "Travel UI",
+    "desc": "A Flutter Travel Booking app UI concept.",
+    "listItem": ["Flutter", "Dart"],
+    "link": "https://github.com/Euphoria99/TravelUI"
+  },
+  {
+    "title": "Huddle",
+    "desc": "A React UI app that leverages styled components",
+    "listItem": ["React", "Styled Components", "JavaScript"],
+    "link": "https://github.com/Euphoria99/Huddle-React-StyledComponents"
+  },
+  {
+    "title": "Gojo",
+    "desc": "A minimalistic static website built using HTML, CSS and Javascript",
     "listItem": ["HTML", "CSS", "JavaScript"],
-    "link": "https://github.com"
-  },
-  {
-    "title": "CGI-1",
-    "desc": "Lorem ipsum dolor sit amet consectetur adipisicing elit. Incidunt, pariatur? Voluptas perferendis aspernatur recusandae unde ea eum iusto nemo. Nam rem id minus. Accusantium fuga tempore iure. Porro, nemo adipisci.",
-    "listItem": ["Flutter", "BLoC", "Firebase"],
-    "link": "https://github.com"
-  },
-  {
-    "title": "CGI-2",
-    "desc": "Lorem ipsum dolor sit amet consectetur adipisicing elit. Incidunt, pariatur? Voluptas perferendis aspernatur recusandae unde ea eum iusto nemo. Nam rem id minus. Accusantium fuga tempore iure. Porro, nemo adipisci.",
-    "listItem": ["HTML", "CSS", "JavaScript"],
-    "link": "https://github.com"
-  },
-  {
-    "title": "CGI-3",
-    "desc": "Lorem ipsum dolor sit amet consectetur adipisicing elit. Incidunt, pariatur? Voluptas perferendis aspernatur recusandae unde ea eum iusto nemo. Nam rem id minus. Accusantium fuga tempore iure. Porro, nemo adipisci.",
-    "listItem": ["HTML", "CSS", "JavaScript"],
-    "link": "https://github.com"
+    "link": "https://github.com/Euphoria99/gojo"
   },
 ];
 
