@@ -123,4 +123,22 @@ const otherProjects = [
   },
 ];
 
-export { allLinks, experienceList, bioData, featuredProjectList, otherProjects };
+const educationList = [
+  {
+    instutionName: "Sahaydri College of Engineering & Management",
+    course: "Bachelor of Engineering in Computer Science & Engineering",
+    placeOfStudy: "Mangaluru, Karnataka, India",
+    durationOfStudy: "4 years",
+    institutionLink: "https://sahyadri.edu.in/",
+  },
+  {
+    instutionName: "Sharada PU College",
+    course: "Pre University, PCMS(Phyisics, Chemistry, Mathematics, Statistics)",
+    placeOfStudy: "Mangaluru, Karnataka, India",
+    durationOfStudy: "2 years",
+    institutionLink: "https://sharadapuc.org/",
+  },
+]
+
+
+export { allLinks, experienceList, bioData, featuredProjectList, otherProjects, educationList };

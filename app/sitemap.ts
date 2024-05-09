@@ -27,6 +27,12 @@ export default function sitemap(): MetadataRoute.Sitemap {
             priority: 0.9,
         },
         {
+            url: 'https://www.pavanbhat.dev/education',
+            lastModified: new Date(),
+            changeFrequency: 'monthly',
+            priority: 0.9,
+        },
+        {
             url: 'https://www.pavanbhat.dev/contacts',
             lastModified: new Date(),
             changeFrequency: 'monthly',
