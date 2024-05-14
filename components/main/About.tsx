@@ -1,7 +1,7 @@
 import React from "react";
 import SectionTitle from "../sub-components/SectionTitle";
 import { HiOutlineRocketLaunch } from "react-icons/hi2";
-import { zhang } from "@/public/assets";
+import { hero } from "@/public/assets";
 import Image from "next/image";
 import { bioData } from "../../datasource"
 
@@ -34,7 +34,7 @@ const About = () => {
             <div className="w-full h-full relative z-20 flex pl-6 lgl:pl-0">
               <Image
                 className="rounded-lg h-full object-cover"
-                src={zhang}
+                src={hero}
                 alt="profile Image"
               />
               <div className="hidden lgl:inline-block absolute w-full h-80 bg-textColor/20 
