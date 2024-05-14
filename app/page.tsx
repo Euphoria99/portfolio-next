@@ -9,7 +9,7 @@ export const metadata: Metadata = {
   generator: 'Next.js',
   applicationName: 'Pavan Bhat\'s Portfolio',
   referrer: 'origin-when-cross-origin',
-  keywords: ['Next.js', 'React', 'JavaScript'],
+  keywords: ['Web Developer','Full Stack Developer','Software Engineer','Software Developer','Backend Developer','Java Developer','AWS','Developers in Mangaluru','Developers in Mangalore','Developers in Bangaluru','Developers in Bangalore'],
   authors: [{ name: 'Pavan' , url:'https://www.pavanbhat.dev/'}],
   creator: 'Pavan Bhat',
   metadataBase: new URL("https://www.pavanbhat.dev/"),
