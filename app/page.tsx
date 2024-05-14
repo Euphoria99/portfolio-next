@@ -1,5 +1,5 @@
 import Home from "@/components/main/Home";
-import { zhang2 } from "@/public/assets";
+import { heroOG } from "@/public/assets";
 import { Metadata } from "next";
 
 
@@ -9,7 +9,7 @@ export const metadata: Metadata = {
   generator: 'Next.js',
   applicationName: 'Pavan Bhat\'s Portfolio',
   referrer: 'origin-when-cross-origin',
-  keywords: ['Next.js', 'React', 'JavaScript'],
+  keywords: ['Web Developer','Full Stack Developer','Software Engineer','Software Developer','Backend Developer','Java Developer','AWS','Developers in Mangaluru','Developers in Mangalore','Developers in Bangaluru','Developers in Bangalore'],
   authors: [{ name: 'Pavan' , url:'https://www.pavanbhat.dev/'}],
   creator: 'Pavan Bhat',
   metadataBase: new URL("https://www.pavanbhat.dev/"),
@@ -22,7 +22,7 @@ export const metadata: Metadata = {
     siteName: 'Pavan Bhat',
     images: [
       {
-        url: zhang2.src,
+        url: heroOG.src,
         alt: 'Pavan\'s Image',
       },
     ],
@@ -36,7 +36,7 @@ export const metadata: Metadata = {
     site: '@pavanbhat_99',
     images: [
       {
-        url:zhang2.src,
+        url:heroOG.src,
         width: 512,
         height: 286,
         alt: 'Pavan\'s Image',

@@ -14,6 +14,7 @@ import Contact from './Contacts';
 import Footer from './Footer';
 import { useCallback, useEffect, useRef, useState } from 'react';
 import Signature from '../sub-components/Signature';
+import Education from './Education';
 
 
 
@@ -56,6 +57,8 @@ export default function Home() {
           <Projects />
           {/*  Archive*/}
           <Archives />
+          {/*  Education*/}
+          <Education />
           {/*  Contact*/}
           <Contact />
           {/*  Footer*/}

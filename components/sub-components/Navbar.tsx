@@ -4,12 +4,12 @@ import IconLogo from "./icon";
 import Link from "next/link";
 import { motion } from "framer-motion";
 import { MdOutlineClose } from "react-icons/md";
-import { bioData , allLinks} from "../../datasource";
+import { bioData, allLinks } from "../../datasource";
 
-interface homeComp{
+interface homeComp {
   isAtTop: boolean
 }
-const Navbar = ({ isAtTop }:homeComp) => {
+const Navbar = ({ isAtTop }: homeComp) => {
   const ref = useRef<String | any>("");
   const [showMenu, setShowMenu] = useState(false);
   const handleScroll = (e: React.MouseEvent<HTMLAnchorElement, MouseEvent>) => {
@@ -36,7 +36,7 @@ const Navbar = ({ isAtTop }:homeComp) => {
   }
   return (
     <div className={`w-full h-20 lg:h-[12vh] sticky top-0 z-50 bg-bodyColor px-4 ${isAtTop ? '' : 'shadow-navbarShadow'
-    }`}>
+      }`}>
       <div className="max-w-container h-full mx-auto py-1 font-titleFont flex items-center justify-between">
         <Link
           href="#home"
@@ -48,12 +48,12 @@ const Navbar = ({ isAtTop }:homeComp) => {
             animate={{ opacity: 1 }}
             transition={{ duration: 0.5 }}
           >
-          <Link
-          href="#home"
-          onClick={handleScroll}
-          >
-            <IconLogo />
-          </Link>
+            <Link
+              href="#home"
+              onClick={handleScroll}
+            >
+              <IconLogo />
+            </Link>
           </motion.div>
         </Link>
         <div className="hidden mdl:inline-flex items-center gap-7">
@@ -112,6 +112,20 @@ const Navbar = ({ isAtTop }:homeComp) => {
                 transition={{ duration: 0.1, delay: 0.1 }}
               >
                 <span className="text-textColor"></span> Projects
+              </motion.li>
+            </Link>
+            {/* Education */}
+            <Link
+              href="#education"
+              onClick={handleScroll}
+              className="flex items-center gap-1 font-medium  text-textDark hover:text-textColor cursor-pointer duration-300 nav-link"
+            >
+              <motion.li
+                initial={{ y: -10, opacity: 0 }}
+                animate={{ y: 0, opacity: 1 }}
+                transition={{ duration: 0.1, delay: 0.1 }}
+              >
+                <span className="text-textColor"></span> Education
               </motion.li>
             </Link>
             {/*-Contact-*/}
@@ -223,6 +237,20 @@ const Navbar = ({ isAtTop }:homeComp) => {
                       transition={{ duration: 0.2, delay: 0.4, ease: "easeIn" }}
                     >
                       <span className="text-textColor"></span> Projects
+                    </motion.li>
+                  </Link>
+                  {/*-Education-*/}
+                  <Link
+                    href="#education"
+                    onClick={handleScroll}
+                    className="flex items-center gap-1 font-medium  text-textDark hover:text-textColor cursor-pointer duration-300 nav-link"
+                  >
+                    <motion.li
+                      initial={{ y: -10, opacity: 0 }}
+                      animate={{ y: 0, opacity: 1 }}
+                      transition={{ duration: 0.2, delay: 0.4, ease: "easeIn" }}
+                    >
+                      <span className="text-textColor"></span> Education
                     </motion.li>
                   </Link>
                   {/*-Contact-*/}
