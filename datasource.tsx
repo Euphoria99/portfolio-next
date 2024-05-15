@@ -11,6 +11,7 @@ const bioData = {
   about: "<p>Welcome to my corner of the web! I&apos;m Pavan,a seasoned Software Developer hailing from the vibrant tech hub of Bengaluru, India, with roots tracing back to the serene coastal city of Mangalore.</p><p>With over 2 years of hands-on experience,I specialize in crafting robust web applications and diving into the intricacies of DevOps.</p><p>I'm all about crafting sleek, scalable solutions that deliver top-notch performance.</p>",
   skillList: ["Java", "Springboot", "JavaScript", " MongoDB", "Angular", "Node.js", "AWS", "Docker", " Kubernetes", "Jenkins"],
   enableResume: false,
+  domain:'https://www.pavanbhat.dev'
 }
 
 const allLinks = {
