@@ -61,7 +61,7 @@ const featuredProjectList = [
     projectTech: ['MongoDB', 'Express', 'React', 'Node.js', 'Websockets', 'Tailwind.css'],
     projectLink: '',
     projectImage: chatApp,
-    githubLink: 'https://github.com/Euphoria99'
+    githubLink: 'https://github.com/Euphoria99/echowave-react'
   },
   {
     projectName: "Microservices app on AWS EKS",
