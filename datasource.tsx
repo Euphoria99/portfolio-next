@@ -28,11 +28,10 @@ const experienceList = [
   {
     "company": "Covalensedigital",
     "jobTitle": "Software Developer-1",
-    "jobDuration": "Feb 2024 - present",
+    "jobDuration": "Feb 2024 - August 2024",
     "responsibilities": [
       "Design, develop and deploy Java-based enterprise applications using Spring Boot and microservices architecture.",
-      "Architect and implement scalable, high-performance, and reliable backend systems to support business processes and workflows.",
-      "Architect and implement scalable, high-performance, and reliable backend systems to support business processes and workflows.",  
+      "Architect and implement scalable, high-performance, and reliable backend systems to support business processes and workflows.", 
       "Collaborate with cross-functional teams to design, develop and implement software solutions.",
       "Design database schemas, write optimized SQL queries and ensure data integrity within the applicatio.Utilize Hibernate for seamless Object-Relational Mapping (ORM), allowing for efficient and maintainable database interactions."
     ],
@@ -43,11 +42,11 @@ const experienceList = [
     "jobTitle": "Web Developer",
     "jobDuration": "Aug 2022 - January 2024",
     "responsibilities": [
+      "Implement responsive design principles to ensure compatibility across various devices and browsers. ",
       "Design, develop and maintain efficient, reusable and reliable  code using Angular,NgZorro(ant-design) and Node.js. ",
       "Implement and maintain server-side rendering (SSR)and static site generation (SSG) for improved performance and user experience. ",
       "Work closely with back-end developers to define and implement APIs and data fetching mechanisms. ",
       "Integrate third-party APIs and services to enhance application functionality. ",
-      "Implement responsive design principles to ensure compatibility across various devices and browsers. "
     ],
     "companyLink": "https://thewebpeople.in"
   }
@@ -125,6 +124,13 @@ const otherProjects = [
 ];
 
 const educationList = [
+  {
+    instutionName: "Technological University of the Shannon: Midlands Midwest",
+    course: "Master of Science in Software Design and Cloud Native Computing",
+    placeOfStudy: "Athlone, Co. Westmeath, Ireland",
+    durationOfStudy: "1 years",
+    institutionLink: "https://tus.ie/",
+  },
   {
     instutionName: "Sahaydri College of Engineering & Management",
     course: "Bachelor of Engineering in Computer Science & Engineering",
