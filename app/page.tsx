@@ -4,34 +4,45 @@ import { Metadata } from "next";
 
 
 export const metadata: Metadata = {
-  title: 'Pavan Bhat',
-  description: 'Portfolio by Pavan Bhat',
+  title: 'Pavan Bhat\'s Portfolio',
+  description: 'Explore Pavan Bhat\'s portfolio, featuring projects and skills in software development and engineering.',
   generator: 'Next.js',
   applicationName: 'Pavan Bhat\'s Portfolio',
   referrer: 'origin-when-cross-origin',
-  keywords: ['Web Developer','Full Stack Developer','Software Engineer','Software Developer','Backend Developer','Java Developer','AWS','Developers in Mangaluru','Developers in Mangalore','Developers in Bangaluru','Developers in Bangalore'],
-  authors: [{ name: 'Pavan' , url:'https://www.pavanbhat.dev/'}],
+  keywords: [
+    'Software Developer', 'Web Developer', 'Full Stack Developer', 'Software Engineer', 'Backend Developer', 'Java Developer', 
+    'React Developer', 'Node.js Developer', 'JavaScript Developer', 'TypeScript Developer', 'AWS Certified Developer', 'Docker', 
+    'Developers in Dublin', 'Developers in Limerick', 'Developers in Cork', 'Developers in Galway', 'Developers in Athlone', 
+    'Software Developer in Ireland', 'IT Jobs in Ireland', 'Remote Software Jobs Ireland', 'Frontend Developer', 'Backend Developer Ireland', 
+    'MERN Stack Developer', 'Next.js Developer', 'SQL/NoSQL Database Developer', 'Junior Developer Ireland', 'Senior Software Engineer', 
+    'Fintech Developer Ireland', 'E-commerce Developer Ireland', 'Engineers in Dublin', 'Engineers in Limerick', 'Engineers in Cork', 
+    'Engineers in Galway', 'Engineers in Athlone', 'Engineers in Mangaluru', 'Engineers in Mangalore', 'Engineers in Bengaluru', 
+    'Engineers in Bangalore', 'Fullstack Developers in Dublin', 'Fullstack Developers in Limerick', 'Fullstack Developers in Cork', 
+    'Fullstack Developers in Galway', 'Fullstack Developers in Athlone', 'Fullstack Developers in Mangaluru', 'Fullstack Developers in Mangalore', 
+    'Fullstack Developers in Bengaluru', 'Fullstack Developers in Bangalore'
+  ],
+  authors: [{ name: 'Pavan', url: 'https://www.pavanbhat.dev/' }],
   creator: 'Pavan Bhat',
   metadataBase: new URL("https://www.pavanbhat.dev/"),
   publisher: 'Pavan Bhat',
   openGraph: {
     type: 'website',
-    title: 'Pavan Bhats Portfolio',
-    description: 'Portfolio by Pavan Bhat',
+    title: 'Pavan Bhat\'s Portfolio',
+    description: 'Explore Pavan Bhat\'s portfolio, featuring projects and skills in software development and engineering.',
     url: 'https://www.pavanbhat.dev/',
     siteName: 'Pavan Bhat',
     images: [
       {
-        url: heroOG.src,
-        alt: 'Pavan\'s Image',
+             url:heroOG.src,
+        alt: 'Pavan Bhat\'s Profile Image for Portfolio',
       },
     ],
     locale: 'en_US',
   },
   twitter: {
     card: 'summary_large_image',
-    title: 'Pavan Bhat',
-    description: 'Pavan Bhat\'s Portfolio',
+    title: 'Pavan Bhat\'s Portfolio',
+    description: 'Explore Pavan Bhat\'s portfolio, featuring projects and skills in software development and engineering.',
     creator: '@pavanbhat_99',
     site: '@pavanbhat_99',
     images: [
@@ -39,11 +50,11 @@ export const metadata: Metadata = {
         url:heroOG.src,
         width: 512,
         height: 286,
-        alt: 'Pavan\'s Image',
+        alt: 'Pavan Bhat\'s Profile Image for Portfolio',
       },
     ],
   },
-  // 
+  robots: 'index, follow',
 };
 
 export default function Page() {

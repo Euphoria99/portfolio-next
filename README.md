@@ -37,3 +37,10 @@ This repository contains the source code for my portfolio website. Below you'll 
    - Import your repository.
    - Configure your settings (if required).
    - Deploy your project.
+
+### OG Image Dimensions 
+
+```
+  900 Height
+  900 Width
+```
