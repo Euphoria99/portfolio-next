@@ -11,7 +11,7 @@ const Contact = () => {
         </p>
         <h2 className='font-titleFont text-5xl font-semibold'>Get In Touch</h2>
         <p className='max-w-[600px] text-center text-textDark'>
-        Although I&apos;m not currently looking for any new opportunities, my inbox is always open. Whether you have a question or just want to say hi, I&apos;ll try my best to get back to you!
+        I&apos;m excited to explore internship opportunities that will enhance my learning journey, and I&apos;m also open to graduate roles.<br/> I would truly love to connect! Whether you have a question, some advice to share, or just want to say hello, please feel free to reach out.
         </p>
         <a href={`mailto:${bioData.email}`}>
         <button  className='w-28 h-12 text-sm font-titleFont border border-textColor rounded-md text-textColor tracking-wide hover:bg-hoverColor duration-300' >Say Hello</button> 

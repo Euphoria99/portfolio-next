@@ -1,14 +1,14 @@
-import { chatApp, eksk8s, flutterfirebase } from '@/public/assets';
+import { chatApp, eksk8s, flutterfirebase, videoStreaming } from '@/public/assets';
 
 // const skillList = ["JavaScript", "Node.js", " MongoDB", "Angular", "Express.js", "AWS", "Docker", " Kubernetes"]
 
 const bioData = {
   name: "Pavan Bhat",
-  email: 'pavanbhat4u@gmail.com',
+  email: 'pavanbhat613@gmail.com',
   tagLine: "I build Web Apps and run them on Cloud",
-  tagLine2: "Software Developer | DevOps Enthusiast",
+  tagLine2: "Full Stack Developer | Software Engineer | DevOps Enthusiast",
   summary: `I&apos;m a software developer based in Mangalore, Karnataka-India, specializing in <br /> building  websites and mobile applications and everything in between.`,
-  about: "<p>Welcome to my corner of the web! I&apos;m Pavan,a seasoned Software Developer hailing from the vibrant tech hub of Bengaluru, India, with roots tracing back to the serene coastal city of Mangalore.</p><p>With over 2 years of hands-on experience,I specialize in crafting robust web applications and diving into the intricacies of DevOps.</p><p>I'm all about crafting sleek, scalable solutions that deliver top-notch performance.</p>",
+  about: "<p>I'm Pavan, a Full Stack Developer currently based in Athlone,Ireland. With nearly 3 years of experience in  front-end and back-end development, I bring a well-rounded approach to building high-quality web applications. My work spans multiple tech stacks, including AWS, JavaScript frameworks, Java frameworks and DevOps tools, enabling me to deliver robust and scalable solutions across the entire development lifecycle.</p><p>I enjoy tackling complex challenges and continuously expanding my skills to keep up with the latest in tech.</p>",
   skillList: ["Java", "Springboot", "JavaScript", " MongoDB", "Angular", "Node.js", "AWS", "Docker", " Kubernetes", "Jenkins"],
   enableResume: false,
   domain:'https://www.pavanbhat.dev'
@@ -17,10 +17,10 @@ const bioData = {
 const allLinks = {
   resume: 'https://www.google.com/',
   github:'https://github.com/Euphoria99/',
-  linkedIn:'https://www.linkedin.com/in/pavan-bhat-7544781aa/',
+  linkedIn:'https://www.linkedin.com/in/bhat-pavan/',
   twitter:'https://twitter.com/pavanbhat_99',
   facebook:'https://www.facebook.com/pavan.bhat.906',
-  email:'pavanbhat4u@gmail.com',
+  email:'pavanbhat613@gmail.com',
   discord:''
 }
 
@@ -30,10 +30,10 @@ const experienceList = [
     "jobTitle": "Software Developer-1",
     "jobDuration": "Feb 2024 - August 2024",
     "responsibilities": [
-      "Design, develop and deploy Java-based enterprise applications using Spring Boot and microservices architecture.",
-      "Architect and implement scalable, high-performance, and reliable backend systems to support business processes and workflows.", 
-      "Collaborate with cross-functional teams to design, develop and implement software solutions.",
-      "Design database schemas, write optimized SQL queries and ensure data integrity within the applicatio.Utilize Hibernate for seamless Object-Relational Mapping (ORM), allowing for efficient and maintainable database interactions."
+      "Designed and developed Java-based enterprise applications leveraging Spring Boot and microservices architecture.",
+      "Architected scalable and high-performance backend systems to enhance business workflows and processes.",
+      "Collaborated with cross-functional teams to deliver innovative software solutions, ensuring alignment with project goals.",
+      "Optimized database interactions using Hibernate for Object-Relational Mapping (ORM), focusing on efficient data management and integrity."
     ],
     "companyLink": "https://covalensedigital.com"
   },
@@ -54,15 +54,16 @@ const experienceList = [
 
 const featuredProjectList = [
   {
-    projectName: "Echowave: A Chat App",
+    projectName: "CineCast: Video Streaming Platform",
     projectDesc: `<p className='bg-cardColor text-sm md:text-base p-2 xl:-ml-16 md:p-2 rounded-md'>
-    Real-time chat application built with <span class='text-textColor'>MongoDB</span>, <span class='text-textColor'>Express</span>, <span className='text-textColor'>React</span>, and  <span className='text-textColor'>Node.js</span>.
-    It uses WebSocket technology to provide instant messaging capabilities.</p>`,
-    projectTech: ['MongoDB', 'Express', 'React', 'Node.js', 'Websockets', 'Tailwind.css'],
+    Comprehensive video streaming platform developed using <span class='text-textColor'>Angular</span>, <span class='text-textColor'>Java</span>, 
+    <span class='text-textColor'>Spring Boot</span>, and <span class='text-textColor'>MySQL</span>. It supports video upload and adaptive streaming 
+    across multiple resolutions, ensuring a smooth viewing experience.</p>`,
+    projectTech: ['Angular', 'Java', 'Spring Boot', 'MySQL', 'HLS', 'Docker', 'ffmpeg'],
     projectLink: '',
-    projectImage: chatApp,
-    githubLink: 'https://github.com/Euphoria99/echowave-react'
-  },
+    projectImage: videoStreaming, 
+    githubLink: 'https://github.com/Euphoria99/cinecast-springboot' 
+  },  
   {
     projectName: "Microservices app on AWS EKS",
     projectDesc: `<p className='bg-cardColor text-sm md:text-base p-2 xl:-ml-16 md:p-2 rounded-md'>
@@ -71,6 +72,16 @@ const featuredProjectList = [
     projectImage: eksk8s,
     projectLink: '',
     githubLink: 'https://github.com/Euphoria99/K8s'
+  },
+  {
+    projectName: "Echowave: A Chat App",
+    projectDesc: `<p className='bg-cardColor text-sm md:text-base p-2 xl:-ml-16 md:p-2 rounded-md'>
+    Real-time chat application built with <span class='text-textColor'>MongoDB</span>, <span class='text-textColor'>Express</span>, <span className='text-textColor'>React</span>, and  <span className='text-textColor'>Node.js</span>.
+    It uses WebSocket technology to provide instant messaging capabilities.</p>`,
+    projectTech: ['MongoDB', 'Express', 'React', 'Node.js', 'Websockets', 'Tailwind.css'],
+    projectLink: '',
+    projectImage: chatApp,
+    githubLink: 'https://github.com/Euphoria99/echowave-react'
   },
   {
     projectName: "NoteVerse: Bloc Notes App",
