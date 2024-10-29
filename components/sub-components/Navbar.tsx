@@ -6,8 +6,13 @@ import { motion } from "framer-motion";
 import { MdOutlineClose } from "react-icons/md";
 import { bioData, allLinks } from "../../datasource";
 
+import { VscGithubInverted } from "react-icons/vsc";
+import { FaLinkedinIn } from "react-icons/fa6";
+import { SiTwitter } from "react-icons/si";
+import { FaFacebookSquare } from "react-icons/fa";
+
 interface homeComp {
-  isAtTop: boolean
+  isAtTop: boolean;
 }
 const Navbar = ({ isAtTop }: homeComp) => {
   const ref = useRef<String | any>("");
@@ -35,8 +40,10 @@ const Navbar = ({ isAtTop }: homeComp) => {
     }
   }
   return (
-    <div className={`w-full h-20 lg:h-[12vh] sticky top-0 z-50 bg-bodyColor px-4 ${isAtTop ? '' : 'shadow-navbarShadow'
-      }`}>
+    <div
+      className={`w-full h-20 lg:h-[12vh] sticky top-0 z-50 bg-bodyColor px-4 ${isAtTop ? "" : "shadow-navbarShadow"
+        }`}
+    >
       <div className="max-w-container h-full mx-auto py-1 font-titleFont flex items-center justify-between">
         <Link
           href="#home"
@@ -48,10 +55,7 @@ const Navbar = ({ isAtTop }: homeComp) => {
             animate={{ opacity: 1 }}
             transition={{ duration: 0.5 }}
           >
-            <Link
-              href="#home"
-              onClick={handleScroll}
-            >
+            <Link href="#home" onClick={handleScroll}>
               <IconLogo />
             </Link>
           </motion.div>
@@ -182,8 +186,8 @@ const Navbar = ({ isAtTop }: homeComp) => {
                 onClick={() => setShowMenu(false)}
                 className="text-3xl text-textColor cursor-pointer hover:text-red-500 absolute top-4 right-4"
               />
-              <div>
-                <ul className="flex flex-col text-[15px] gap-7">
+              <div className="flex flex-col items-center gap-7">
+                <ul className="flex flex-col text-base gap-7">
                   <Link
                     href="#home"
                     onClick={handleScroll}
@@ -280,6 +284,45 @@ const Navbar = ({ isAtTop }: homeComp) => {
                     </motion.button>
                   </a>
                 )}
+                <motion.div
+                  initial={{ opacity: 0 }}
+                  animate={{ opacity: 1 }}
+                  transition={{ delay: 0.5 }}
+                  className="flex gap-4 mt-2"
+                >
+                  {/*github */}
+                  <a href={allLinks.github} target="_blank">
+                    <span className="w-10 h-10 text-xl bg-bodyColor rounded-full inline-flex items-center justify-center hover: text-textColor cursor-pointer hover:-translate-y-2 transition-all duration-300">
+                      <VscGithubInverted />
+                    </span>
+                  </a>
+                  {/* linkedin*/}
+                  <a href={allLinks.linkedIn} target="_blank">
+                    <span className="w-10 h-10 text-xl bg-bodyColor rounded-full inline-flex items-center justify-center hover: text-textColor cursor-pointer hover:-translate-y-2 transition-all duration-300">
+                      <FaLinkedinIn />
+                    </span>
+                  </a>
+                  {/*twitter */}
+                  <a href={allLinks.twitter} target="_blank">
+                    <span className="w-10 h-10 text-xl bg-bodyColor rounded-full inline-flex items-center justify-center hover: text-textColor cursor-pointer hover:-translate-y-2 transition-all duration-300">
+                      <SiTwitter />
+                    </span>
+                  </a>
+                  {/* facebook*/}
+                  <a href={allLinks.facebook} target="_blank">
+                    <span className="w-10 h-10 text-xl bg-bodyColor rounded-full inline-flex items-center justify-center hover: text-textColor cursor-pointer hover:-translate-y-2 transition-all duration-300">
+                      <FaFacebookSquare />
+                    </span>
+                  </a>
+                </motion.div>
+                <motion.div
+                  initial={{ opacity: 0 }}
+                  animate={{ opacity: 1 }}
+                  transition={{ delay: 0.5 }}
+                  className="flex gap-4 mt-2  text-textColor"
+                >
+                  {bioData.email}
+                  </motion.div>
               </div>
             </motion.div>
           </div>
